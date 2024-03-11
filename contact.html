@@ -5,6 +5,7 @@
     <title>VG|Contact</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body class="contact-body">
@@ -58,8 +59,8 @@
             </p>
           </div>
         </div>
-        <div class="col-md-6 d-flex justify-content-start align-items-center">
-          <form class="data-form mt-5">
+        <div class=" form-sec col-md-6 d-flex justify-content-start align-items-center">
+          <form class="data-form" id="formData" data-aos="zoom-in" data-aos-duration="1000">
             <div class="collection">
               <div class="input_field">
                 <label for="fname">first name</label>
@@ -79,12 +80,21 @@
               <input id="note" type="text" />
             </div>
             <div class="text-center mt-3">
-              <button class="submit-form-btn" type="submit">Submit</button>
+              <button id="contactFormBtn" class="submit-form-btn" type="button">Submit</button>
             </div>
           </form>
+          <div id="contactDataResault" class="data-form-resault  data-form-resault-hidden">
+            <div class="form-resault-container">
+              <h4 class="form-resault-text">Well, we will take your note into consideration </h4>
+            </div>
+            <div class="text-center mt-3">
+              <button id="okBtn" class="submit-form-btn" type="button"><img src="./images/trueBtn.png" alt="true"></button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
     <footer>
       <img
         class="copyRightImg"
@@ -97,6 +107,7 @@
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>

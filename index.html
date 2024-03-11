@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -28,7 +29,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Us</a>
@@ -48,47 +51,47 @@
 
     <header>
       <div class="row">
-        <div class="col-md-6 justify-content-center align-items-center">
+        <div class="col-md-6 justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
           <div class="p-4">
             <h1 class="title">Vigilant Guard</h1>
             <p>
-              Keep yours file save with Vigilant Guard. Drag and drop suspicious
+              Keep your files safe with Vigilant Guard. Drag and drop suspicious
               files to detect Ransomware for free.
             </p>
             <p>
-              Scan yor document and make sure your files are safe and free from
+              Scan your document and make sure your files are safe and free from
               viruses before you open them.
             </p>
           </div>
         </div>
-        <div class="col-md-6 d-flex justify-content-center align-items-center">
-          <form class="upload-form">
-            <label for="uploadFile" class="upload-label"
-              ><img src="./images/upload.png" alt="upload" />
-              <span
-                >Drop file here or
-                <label for="uploadFile" class="browse_label"
-                  >Browse</label
-                ></span
-              >
+        <div class="col-md-6 d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
+          <div class="upload-form">
+            <label for="uploadFile" class="upload-label" id="uploadLabel">
+              <img src="./images/upload.png" alt="upload">
+              <span class="upload-text">Drop files here or
+                <label for="uploadFile" class="browse_label">Browse</label>
+              </span>
             </label>
-            <input id="uploadFile" type="file" class="upload-file" />
-            <button class="submit-btn" type="submit">Submit</button>
-          </form>
+            <input id="uploadFile" type="file" class="upload-file" multiple />
+            <button class="submit-btn" id="formBtn">Submit</button>
+            <div class="mt-4 w-100" id="dataResault">
+            </div>
+          </div>
         </div>
       </div>
     </header>
+    
 
     <section class="about-sec">
-      <h2>About Us</h2>
-      <div class="row py-5">
+      <h2 data-aos="fade-up">About Us</h2>
+      <div  class="row py-5">
         <div class="col-md-4 d-flex align-items-center">
-          <div class="about_badge">
+          <div data-aos="fade-right" data-aos-duration="1000" class="about_badge">
             <span>The Team </span>
           </div>
         </div>
         <div class="col-md-8 d-flex align-items-center">
-          <div class="about-caption">
+          <div class="about-caption" data-aos="fade-left" data-aos-duration="1000">
             <p>
               Our team is a dynamic and talented group of individuals united by
               a shared passion for excellence and a commitment to delivering
@@ -103,7 +106,7 @@
       </div>
       <div class="row py-5">
         <div class="col-md-8 d-flex align-items-center justify-content-end">
-          <div class="about-caption">
+          <div class="about-caption" data-aos="fade-right" data-aos-duration="1000">
             <p>
               As novel technologies continue to reshape the digital era,
               cyberattacks are also increasingly becoming more commonplace and
@@ -117,27 +120,28 @@
           </div>
         </div>
         <div class="col-md-4 d-flex align-items-center justify-content-end">
-          <div class="about_badge about_badge2">
+          <div class="about_badge about_badge2" data-aos="fade-left" data-aos-duration="1000">
             <span>Out project</span>
           </div>
         </div>
       </div>
     </section>
 
+   
     <section class="contact-sec">
       <div class="row">
         <div class="col-md-6 d-flex justify-content-center align-items-center">
-            <div>
-                <h2 class="contact-h2">Contact Us</h2>
-                <p class="contact-p">
-                  We value your feedback and inquiries! Whether you have questions
-                  about our services, or simply want to connect, our dedicated team is
-                  here to assist you.
-                </p>
-            </div>
+          <div>
+            <h2 class="contact-h2">Contact Us</h2>
+            <p class="contact-p">
+              We value your feedback and inquiries! Whether you have questions
+              about our services, or simply want to connect, our dedicated team
+              is here to assist you.
+            </p>
+          </div>
         </div>
-        <div class="col-md-6  d-flex justify-content-start align-items-center">
-          <form class="data-form">
+        <div class=" form-sec col-md-6 d-flex justify-content-start align-items-center">
+          <form class="data-form" id="formData" data-aos="zoom-in" data-aos-duration="1000">
             <div class="collection">
               <div class="input_field">
                 <label for="fname">first name</label>
@@ -157,19 +161,34 @@
               <input id="note" type="text" />
             </div>
             <div class="text-center mt-3">
-                <button class="submit-form-btn" type="submit">Submit</button>
-
+              <button id="contactFormBtn" class="submit-form-btn" type="button">Submit</button>
             </div>
           </form>
+          <div id="contactDataResault" class="data-form-resault  data-form-resault-hidden">
+            <div class="form-resault-container">
+              <h4 class="form-resault-text">Well, we will take your note into consideration </h4>
+            </div>
+            <div class="text-center mt-3">
+              <button id="okBtn" class="submit-form-btn" type="button"><img src="./images/trueBtn.png" alt="true"></button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    
+
     <footer>
-        <img class="copyRightImg" src="./images/copyRight.png" alt="copyRight"><span>2023 vigilant Guard - Made with love  <img class="heartImg" src="./images/heart.png" alt="heart"></span>
+      <img
+        class="copyRightImg"
+        src="./images/copyRight.png"
+        alt="copyRight"
+      /><span
+        >2023 vigilant Guard - Made with love
+        <img class="heartImg" src="./images/heart.png" alt="heart"
+      /></span>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
