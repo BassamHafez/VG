@@ -1,0 +1,300 @@
+
+/* ------------------------------------------main style---------------------------------------------------- */
+@font-face {
+    font-family: "Istok Web";
+    src: url('../fonts/IstokWeb-Bold.ttf') format('truetype');
+    font-weight: bold;
+  }
+  
+  @font-face {
+    font-family: "Istok Web";
+    src: url('../fonts/IstokWeb-Regular.ttf') format('truetype');
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: "Imprima";
+    src: url('../fonts/IstokWeb-Regular.ttf') format('truetype');
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "Roboto Slab";
+    src: url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "Inika";
+    src: url('../fonts/Inika-Regular.ttf') format('truetype');
+    font-weight: normal;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #31314D;
+}
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #F0EBE5;
+}
+ul{
+    margin: 0;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button,input{
+    border: none;
+    outline: none;
+}
+
+/* ------------------------------------------navbar---------------------------------------------------- */
+
+.navbar{
+    height: 132px;
+}
+.nav-item{
+    margin-inline: 10px;
+}
+.nav-link{
+    font-family:"Istok Web", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 34.55px;
+}
+
+.logo_brand{
+    width:120px;
+}
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    font-family: "Imprima";
+    color: black;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 42px;
+    letter-spacing: 0em;
+}
+.active{
+    color:black;
+}
+
+/* ------------------------------------------header---------------------------------------------------- */
+header{
+   margin-top:45px;
+   padding: 20px;
+}
+.title{
+    font-family: "Roboto Slab";
+    font-weight: normal;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 127px;
+    letter-spacing: 0em;
+}
+header p{
+    font-family: "Inika";
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0em;
+    margin: 20px 0;
+}
+.upload-form{
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.upload-label{
+    width:90%;
+    background-color: #e7ded6;
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px dashed rgb(202, 177, 161);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.upload-label span{
+    color: black;
+    font-family: "Istok Web";
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 35px;
+    letter-spacing: 0em;
+    margin-top: 20px;
+}
+.browse_label{
+    font-weight: bold;
+}
+.upload-label img{
+    width: 74px;
+    height: 74px;
+}
+.upload-file{
+    display: none;
+}
+.submit-btn{
+    background-color: #31314D;
+    width: 316px;
+    height: 45px;
+    border-radius: 15px;
+    color: white;
+    margin-top: 20px;
+}
+
+/* ------------------------------------------about us---------------------------------------------------- */
+.about-sec{
+    background-color: #B7BBC4;
+}
+.about-sec h2{
+    font-family:"Roboto Slab";
+    font-size: 96px;
+    font-weight: normal;
+    line-height: 126.61px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about_badge{
+    background-color: #31314D;
+    width: 439px;
+    height: 60px;
+    border-radius:0 8px 8px 0;
+    text-align: end;
+    padding: 10px;
+
+}
+.about_badge2{
+    border-radius:8px 0  0 8px ;
+}
+.about_badge span{
+    color: white;
+    font-family: "Inika";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+}
+.about-caption{
+    width: 80%;
+}
+.about-caption p{
+    font-family: "Inika";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+}
+/* ------------------------------------------contact us---------------------------------------------------- */
+.contact-sec{
+    background: linear-gradient(to right , white 60%,#31314D 60%);
+    padding: 40px 10px;
+}
+
+.contact-h2{
+    font-family:"Roboto Slab";
+    font-size: 96px;
+    font-weight: normal;
+    line-height: 126.61px;  
+    letter-spacing: 0em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-p{
+    font-family:"Inika";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.data-form{
+    background-color: #B7BBC4;
+    padding: 20px;
+}
+.collection{
+    display: flex;
+}
+.collection .input_field{
+    width: 49%;
+}
+.input_field{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+
+}
+.input_field input{
+    width: 95%;
+    background-color: #F0EBE5;
+    height: 21px;
+    border-bottom: 1px solid #31314D;
+}
+.input_field label{
+    font-family:"Inika";
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 26px;
+    letter-spacing: 0em;   
+    margin-bottom: 10px; 
+}
+.submit-form-btn{
+background-color: #31314D;
+color: white;
+width: 210px;
+height: 35px;
+border-radius: 15px;
+
+}
+.contact-body{
+    background-color: white;
+}
+.contact-in-contact{
+    min-height:70vh;
+}
+/* ------------------------------------------footer---------------------------------------------------- */
+footer{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+footer span{
+    color:black;
+    font-family: "Imprima";
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.copyRightImg{
+    width: 40px;
+    margin-right: 5px;
+}
+.heartImg{
+    width: 21px;
+    height: 20.05px;
+}
+/* ------------------------------------------media query---------------------------------------------------- */
+
+@media screen and (max-width:768px) {
+    body{
+        font-size: 14px;
+    }
+}
