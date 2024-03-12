@@ -124,7 +124,7 @@ header {
     background-color: #e7ded6;
     padding: 1.25rem 3.125rem;
     border-radius: 0.625rem;
-    border: 0.0625rem dashed rgb(202, 177, 161);
+    border: 3px dashed rgb(202, 177, 161);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -163,8 +163,19 @@ header {
     color: white;
     margin-top: 1.25rem;
     transition: all .4s;
+    position: relative;
   }
-  
+  .submit-btn a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0.9375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .submit-btn:hover {
     scale: 1.05;
   }
@@ -304,6 +315,9 @@ header {
     line-height: 1.8125rem;
     letter-spacing: 0em;
     text-align: center;
+  }
+  .details-in-index{
+    display: none !important;
   }
 /* ------------------------------------------about us---------------------------------------------------- */
 .about-sec{
@@ -485,6 +499,16 @@ footer span{
     width: 1.3125rem;
     height: 1.2531rem;
 }
+/* ------------------------------------------details---------------------------------------------------- */
+.details-container{
+min-height: 70vh;
+}
+.details-label{
+  flex-direction: row;
+  justify-content: flex-start;
+  border: 3px dashed rgb(202, 177, 161);
+
+}
 /* ------------------------------------------media query---------------------------------------------------- */
 
 @media screen and (max-width:768px) {
@@ -531,6 +555,11 @@ footer span{
 @media screen and (max-width:350px) {
     .submit-btn {
         width: 90%;
+      }
+      .details-label{
+        flex-direction: column ;
+        justify-content: center ;
+        text-align: center;
       }
 }
 

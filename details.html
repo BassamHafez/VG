@@ -35,7 +35,7 @@
               <a class="nav-link " href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="contact.html">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"
@@ -46,54 +46,24 @@
         </div>
       </div>
     </nav>
-
-    <section class="contact-sec contact-in-contact d-flex align-items-center">
-      <div class="row ">
-        <div class="col-md-6 d-flex justify-content-center align-items-center">
-          <div>
-            <h2 class="contact-h2">Contact Us</h2>
-            <p class="contact-p">
-              We value your feedback and inquiries! Whether you have questions
-              about our services, or simply want to connect, our dedicated team
-              is here to assist you.
-            </p>
-          </div>
-        </div>
-        <div class=" form-sec col-md-6 d-flex justify-content-start align-items-center">
-          <form class="data-form" id="formData" data-aos="zoom-in" data-aos-duration="1000">
-            <div class="collection">
-              <div class="input_field">
-                <label for="fname">first name</label>
-                <input id="fname" type="text" />
-              </div>
-              <div class="input_field">
-                <label for="lname">last name</label>
-                <input id="lname" type="text" />
-              </div>
-            </div>
-            <div class="input_field">
-              <label for="email">Email *</label>
-              <input id="email" type="email" />
-            </div>
-            <div class="input_field">
-              <label for="note">Write a note</label>
-              <input id="note" type="text" />
-            </div>
-            <div class="text-center mt-3">
-              <button id="contactFormBtn" class="submit-form-btn" type="button">Submit</button>
-            </div>
-          </form>
-          <div id="contactDataResault" class="data-form-resault  data-form-resault-hidden">
-            <div class="form-resault-container">
-              <h4 class="form-resault-text">Well, we will take your note into consideration </h4>
-            </div>
-            <div class="text-center mt-3">
-              <button id="okBtn" class="submit-form-btn" type="button"><img src="./images/trueBtn.png" alt="true"></button>
-            </div>
+    
+</div>
+<div class="container">
+    <div class="d-flex justify-content-center align-items-center details-container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="upload-form">
+          <label for="uploadFile" class="upload-label details-label" id="uploadLabel">
+            <img src="./images/upload.png" alt="upload">
+            <span class="upload-text">Drop files here or
+              <label for="uploadFile" class="browse_label">Browse</label>
+            </span>
+          </label>
+          <input id="uploadFile" type="file" class="upload-file" multiple />
+          <div class="mt-4 w-100" id="dataResault">
           </div>
         </div>
       </div>
-    </section>
+</div>
+
 
     <footer>
       <img
@@ -108,6 +78,8 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/contact.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/details.js"></script>
   </body>
 </html>
