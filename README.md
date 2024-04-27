@@ -1,1 +1,2 @@
-# VG
+<h3>VG</h3>
+Our customer-driven website, developed based on specific requests, offers advanced ransomware detection. Built with HTML, CSS, and JavaScript, it analyzes PCAP files using machine learning techniques to combat ransomware attacks. With user-friendly features, you can upload files, view results, and safeguard your network. Together, we create a safer digital environment tailored to your needs.
