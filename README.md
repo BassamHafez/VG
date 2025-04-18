@@ -8,7 +8,7 @@
 <h3>🔑 Features</h3>
 <ul>
   <li>User-friendly interface built based on a Figma design for smooth interaction.</li>
-  <li>Upload PCAP files to analyze for ransomware detection (backend integration is pending).</li>
+  <li>Drag and drop suspicious files to detect Ransomware for free (backend integration is pending).</li>
   <li>Clear and intuitive display of ransomware attack results and analysis.</li>
   <li>Responsive and mobile-friendly design.</li>
   <li>Frontend-only project, with backend integration planned for full functionality.</li>
